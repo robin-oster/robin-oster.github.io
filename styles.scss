@@ -1,0 +1,19 @@
+#navbarSupportedContent {
+    justify-content: right;
+}
+
+header, html {
+    background-color: #0C1629;
+}
+
+a > nav-link:hover{
+    background-color: #00FF9A;
+}
+
+.navbar-item >a:hover {
+    background-color: #00FF9A;
+}
+
+.workIMGS{
+    border: 25em black solid;
+}

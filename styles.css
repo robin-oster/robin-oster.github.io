@@ -1,0 +1,393 @@
+@keyframes fade-in {
+    0%{ transform: scale(0, .025) }
+    50%{ transform: scale(1, .025)}
+}
+
+@keyframes show-up{
+    0% {opacity: 0%}
+    100% {opacity: 100%}
+}
+
+@keyframes go-away{
+    0% {opacity: 100%}
+    100% {opacity: 0%}
+}
+
+body {
+    height: 100%;
+    background-color: #0C1629;
+}
+
+row {
+    padding-right: 0rem !important;
+    margin-right: 0rem !important;
+}
+
+#particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+}
+
+p, h1, h2, a, img, table, td, th, tr, i {
+    z-index: 10;
+}
+
+header, html *{
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li > a {
+    color: white;
+}
+
+h1 {
+    color: #00FF9A;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+main > .row{
+    background-color: white;
+}
+
+/* ---------- Classes ----------- */
+
+.aboutCenter{
+    padding: 0em;
+}
+
+.aboutLeft {
+    padding-right: 0em;
+}
+
+.aboutRight {
+    padding-left: 0em;
+} 
+
+.btn-primary{
+    color:#bacbee;
+    background-color:#0C1629;
+}
+
+.card-body{
+    padding-left: 2rem;
+}
+
+.card-body, .card-body > *{
+    background-color: #152441
+}
+
+.liveLink, .githubLink {
+    display: flex;
+    color: #00FF9A;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.liveLink{
+    padding-left: 6rem;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #00FF9A;
+} 
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    margin-right: 1rem;
+    color: white;
+}
+
+.navbar-nav .nav-link:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.navbar .navbar-expand-lg{
+    justify-content: right;
+}
+
+.projDesc{
+    display: absolute;
+}
+
+.projDescRight {
+    margin-right: -2rem;
+
+}
+
+.workIMG {
+    display: flex;
+    justify-content: center;
+}
+
+.workEntry{
+    margin-bottom: 8rem;
+
+}
+
+/* ---------- IDs ---------- */
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0
+}
+
+#headerRow {
+    position: sticky;
+    top: 0rem;
+    background-color: #0C1629;
+    z-index: 15;
+    filter: drop-shadow(0px 2px 1rem black);
+}
+
+#navbarSupportedContent {
+    justify-content: right;
+}
+
+#leftLine{
+    margin-top: 2rem;
+    border-bottom: 4px solid royalblue;
+}
+
+#rightLine{
+    margin-top: 2rem;
+    border-bottom: 4px solid royalblue;
+}
+
+#aboutRow {
+    margin-top: 1rem;
+}
+
+#introduction {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    display: flex;
+    justify-content: left;
+    color: white;
+    margin-top:1rem;
+    font-size: 2.5rem;
+}
+
+#infoText1, #infoText2, #infoText3 {
+    color: #7787A4;
+    
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+
+p {
+    color: #7787A4;
+    font-size: 1.5rem;
+
+}
+
+#technologies1 th i, #technologies2 th i, #technologies3 th i, div i{
+    color: #7787A4;
+    margin: auto;
+    padding: 1rem;
+    font-size: 3.5rem;
+}
+
+i{
+    color: #00FF9A;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    font-size: 3rem;
+}
+
+#name {
+    color: #00FF9A;
+}
+
+table, tr{
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    animation-name: fade-in;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+}
+
+#technologies1, #technologies2, #technologies3{
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+#aboutCard, #formCard, #contactCard{
+    padding: 0.2rem;
+    background-color: #030e22;
+    color:#98a9c9;
+    margin-left: 1rem;
+
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+label {
+    background-color:#152441
+}
+
+#emailInput, #messageInput, #subjectInput {
+    background-color: #bacbee;
+}
+
+input::placeholder{
+    color:#0C1629;
+    opacity: 1;
+}
+
+input::-moz-placeholder{
+    color:#0C1629;
+    opacity: 1;
+}
+
+input::-webkit-input-placeholder{
+    color:#0C1629;
+    opacity: 1;
+}
+
+
+#emailaddress{
+    color:#00FF9A;
+}
+
+#workRow{
+    margin-top: 2rem;
+}
+
+#contactRow{
+    margin-bottom: 1.5rem;
+}
+
+#linksRow{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#linksCol{
+    display: flex;
+    justify-content: center;
+}
+
+#linksCol a i{
+    padding: 4rem;
+    color:#00FF9A;
+    text-decoration: none;
+}
+
+i:hover {
+    font-size: 4rem;
+}
+
+#emailIcon {
+    font-size: 3.5rem;
+    top: -4rem;
+}
+
+#emailIcon:hover {
+    font-size: 4rem;
+    top: -4rem;
+}
+
+h2 {
+    color: #00FF9A;
+    text-align: center;
+}
+
+
+img {
+    max-height: 70%;
+    max-width: 70%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+hr {
+    color: royalblue;
+    margin-bottom: 4rem !important;
+    margin-bottom: 4rem !important;
+}
+
+#about{
+    padding-top: 0.5rem;
+}
+
+#aboutCard, #contactCard{
+    margin-bottom: 4rem !important;
+}
+
+#aboutCard, .projDescRight {
+    margin-left: 2rem;
+    
+}
+
+#workRow{
+   padding-top: 0.5rem;
+}
+
+#workImgRight{
+    margin-left: 15rem;
+}
+
+#moreToCome{
+    text-align: center;
+    color:#00FF9A;
+    margin-bottom: 12rem;
+    margin-top: 4rem;
+}
+
+img {
+    border: #030e22 solid 5px;
+}
+
+#aboutRow {
+    margin-top: -1rem;
+}
+
+#contactEmail{
+    margin-left: 1.2rem;
+}
+
+footer {
+    padding-top: 2rem;
+}
