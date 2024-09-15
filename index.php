@@ -96,7 +96,7 @@
         <footer>
           <div class="row g-0" id="linksRow">
             <div class="col-md-12" id="linksCol">
-                  <a href="https://github.com/spageddy-jones"><i class="devicon-github-original-wordmark"></i></a>
+                  <a href="https://github.com/robin-oster"><i class="devicon-github-original-wordmark"></i></a>
                   <a href="https://twitter.com/spageddy_jones"><i class="devicon-twitter-original"></i></a>
                   <a href="https://www.linkedin.com/in/robin-oster-2505a31b6/"><i class="devicon-linkedin-plain"></i></a>
                   <a href="mailto:mostost96@gmail.com"><i class="fa fa-envelope fa-2xl" aria-hidden="true" id="emailIcon"></i></a>
